@@ -1,8 +1,7 @@
 language: csharp
-solution: UnitTestProject/UnitTestProject.sln
+solution: ./UnitTestProject/UnitTestProject.sln
 install:
-  - nuget restore UnitTestProject/UnitTestProject.sln
-  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+  - travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./UnitTestProject/UnitTestProject.sln
 script:
-  - xbuild /p:Configuration=Debug UnitTestProject/UnitTestProject.sln
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./UnitTestProject/UnitTestProject/bin/Debug/UnitTestProject.dll
+  - xbuild ./UnitTestProject/UnitTestProject.sln
+  - mono ./UnitTestProject/packages/xunit.runner.console*/tools/xunit.console.exe ./UnitTestProject/UnitTestProject/bin/Debug/UnitTestProject.dll
