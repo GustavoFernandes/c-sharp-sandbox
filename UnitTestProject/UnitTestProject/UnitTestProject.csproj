@@ -49,6 +49,11 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Events\AgeChangedDelegate.cs" />
+    <Compile Include="Events\AgeChangedEventArgs.cs" />
+    <Compile Include="Events\NameChangedDelegate.cs" />
+    <Compile Include="Events\Person.cs" />
+    <Compile Include="Events\Delegates.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
