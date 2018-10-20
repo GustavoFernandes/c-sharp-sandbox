@@ -55,7 +55,7 @@
     <Compile Include="Events\Person.cs" />
     <Compile Include="Events\Delegates.cs" />
     <Compile Include="Syntax.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
