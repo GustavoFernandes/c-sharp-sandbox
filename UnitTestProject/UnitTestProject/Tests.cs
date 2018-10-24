@@ -4,7 +4,7 @@ using static Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace UnitTestProject
 {
-	[TestClass]
+    [TestClass]
     public class Tests
     {
         #region Short Circuit
