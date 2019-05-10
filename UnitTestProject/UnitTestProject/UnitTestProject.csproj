@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Parallel.cs" />
     <Compile Include="Events\AgeChangedDelegate.cs" />
     <Compile Include="Events\AgeChangedEventArgs.cs" />
     <Compile Include="Events\NameChangedDelegate.cs" />
